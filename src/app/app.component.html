@@ -1,0 +1,18 @@
+
+<app-home
+[item]="item"
+(newItemEvent)="getElement($event)" >
+</app-home>
+<input [(ngModel)]="item"/>
+
+
+<h1>
+    {{returnedItem}}
+    </h1>
+
+    <ul>
+        <li *ngFor="let m of message">
+           {{m.text}}
+        </li>
+      </ul>
+    <button (click)="onclickalert()">alert</button>
